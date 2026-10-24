@@ -124,7 +124,7 @@ try {
     ]);
     
 } catch (PDOException $e) {
-    error_log("Contact form error: " . $e->getMessage());
+    error_log("Contact form database operation failed");
     jsonError('Failed to submit contact form. Please try again.', 500);
 }
 ?>

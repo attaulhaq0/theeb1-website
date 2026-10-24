@@ -71,7 +71,7 @@ function getDbConnection() {
         );
         return $pdo;
     } catch (PDOException $e) {
-        error_log("Database connection error: " . $e->getMessage());
+        error_log("Database connection failed");
         return null;
     }
 }

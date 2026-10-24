@@ -142,7 +142,7 @@ try {
     ]);
     
 } catch (PDOException $e) {
-    error_log("Consultation booking error: " . $e->getMessage());
+    error_log("Consultation database operation failed");
     jsonError('Failed to book consultation. Please try again.', 500);
 }
 ?>

@@ -94,7 +94,7 @@ try {
     ]);
     
 } catch (PDOException $e) {
-    error_log("Newsletter subscription error: " . $e->getMessage());
+    error_log("Newsletter database operation failed");
     jsonError('Failed to subscribe. Please try again.', 500);
 }
 ?>
